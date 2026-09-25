@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A live character, word, and sentence counter built using HTML5, CSS3 and JavaScript."
+    >
+
+    <meta
+        name="author"
+        content="Rukhsar Hussain"
+    >
+
+    <title>Character and Word Counter </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section
+            class="counter-container"
+            aria-labelledby="page-title"
+        >
+
+            <header class="header">
+
+                <p class="task-label">
+                   TASK 18
+                </p>
+
+                <h1 id="page-title">
+                    Character and Word Counter
+                </h1>
+
+                <p class="description">
+                    Type your text below and see the counts update instantly.
+                </p>
+
+            </header>
+
+
+            <section class="counter-card">
+
+                <label
+                    for="textInput"
+                    class="input-label"
+                >
+                    Enter Your Text
+                </label>
+
+                <textarea
+                    id="textInput"
+                    placeholder="Start typing here..."
+                    maxlength="5000"
+                    aria-label="Text input"
+                ></textarea>
+
+
+                <div class="character-limit">
+
+                    <span>
+                        Maximum 5000 characters
+                    </span>
+
+                    <span id="remainingCount">
+                        5000 remaining
+                    </span>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            CHARACTERS
+                        </span>
+
+                        <strong id="characterCount">
+                            0
+                        </strong>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            WORDS
+                        </span>
+
+                        <strong id="wordCount">
+                            0
+                        </strong>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            SENTENCES
+                        </span>
+
+                        <strong id="sentenceCount">
+                            0
+                        </strong>
+
+                    </article>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="clear-button"
+                    id="clearButton"
+                >
+                    Clear Text
+                </button>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
